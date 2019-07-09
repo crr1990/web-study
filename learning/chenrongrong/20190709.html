@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <h1>{{message}}</h1>
+    <button v-on:click = "alert1">123</button>
+</div>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js'></script>
+<script>
+    var vm = new Vue({
+        el : '#app',
+        data: {
+            message : 'Hello World'
+        },
+        methods:{
+            alert1:function () {
+                alert(this.message)
+            }
+        }
+    })
+</script>
+</body>
+</html>
